@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif, Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    background-image: url(/Imagens/background_pet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgb(255, 255, 255);
+}
+/* para arrumar os elementos da tela */
+
+.content {
+    display: grid;
+    grid-template-areas: 
+    ". . . . ."
+    ". imagem . form ."
+    ". imagem . form ."
+    ". . . . ."
+    ;
+    gap: 90px; /* Para gerar um espaço superior */
+}
+aside {
+    grid-area: imagem; /* identificador do grid layout */
+    display: flex;
+    flex-flow: column wrap;
+}
+img#logo {
+    margin-top: 80px;
+}
+main {
+    grid-area: form; /* identificador do grid layout */
+    width: 600px;
+    height: 500px;
+    padding: 45px 58px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.51); 
+}
+main h2 {
+    font-family: 'Baloo 2', sans-serif;
+    max-width: 430px;
+    font-size: 2rem;
+    color: #7C2D1D;
+}
+main h2 span {
+    color: #F28729;
+}
+a {
+    text-decoration: none;
+    display: flex;
+    flex-flow: column wrap;
+}
+.orange {
+    background-color: #F28729;
+    color: white;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Baloo 2', sans-serif;
+    margin-top: 38px;
+    /* Para centralizar o texto dentro do botao */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.brown {
+    background-color: #7C2D1D;
+    color: white;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-family: 'Baloo 2', sans-serif;
+    margin-top: 38px;
+    /* Para centralizar o texto dentro do botao */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+main p {
+    font-size: 0.9rem;
+    margin-top: 70px;
+    text-align: center;
+}
+a.sec {
+    color: #7C2D1D;
+    text-decoration: underline;
+    text-align: center;
+    margin-top: 13px;
+}
